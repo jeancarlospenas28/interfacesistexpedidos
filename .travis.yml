@@ -8,7 +8,7 @@ jdk:
 
 addons:
   sonarcloud:
-    organization: "interfaceusuario"
+    organization: "sistexpedidos"
     token:
       secure: "$SONAR_KEY_INTERFACE"
 script:
@@ -16,5 +16,5 @@ script:
 deploy:
  provider: heroku
  api-key:
-  secure: $HEROKU_SONAR
- app: interfacesistex
+  secure: $SONAR_KEY_CLOUD
+ app: interfacesistexpedidos
