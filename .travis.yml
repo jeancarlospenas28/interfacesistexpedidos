@@ -10,11 +10,11 @@ addons:
   sonarcloud:
     organization: "sistexpedidos"
     token:
-      secure: "$SONAR_KEY_INTERFACE"
+      secure: "$SONAR_KEY_CLOUD"
 script:
   - sonar-scanner
 deploy:
  provider: heroku
  api-key:
-  secure: $SONAR_KEY_CLOUD
+  secure: $SONAR_KEY_HEROKU
  app: interfacesistexpedidos
